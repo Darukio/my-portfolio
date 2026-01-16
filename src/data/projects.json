@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Plataforma Cuidadores (Frontend)",
+    "desc": "Interfaz web desarrollada en TypeScript para la gestión de cuidadores.",
+    "tech": ["reactnative", "typescript"],
+    "repoLink": "https://github.com/lit-ar-dev/PlataformaCuidadoresFrontend",
+    "status": "wip"
+  },
+  {
+    "id": 2,
+    "title": "Plataforma Cuidadores (Backend)",
+    "desc": "API y lógica de negocio para la plataforma de servicios.",
+    "tech": ["node", "typescript", "postgresql"],
+    "repoLink": "https://github.com/lit-ar-dev/PlataformaCuidadoresBackend",
+    "status": "wip"
+  },
+  {
+    "id": 3,
+    "title": "PyZKTecoClocks",
+    "desc": "GUI para gestionar relojes ZKTeco (Reinicio, Sincronización, Datos).",
+    "tech": ["python"],
+    "repoLink": "https://github.com/Darukio/PyZKTecoClocks",
+    "status": "completed"
+  },
+  {
+    "id": 4,
+    "title": "Compass Node.js Project",
+    "desc": "Proyecto final para el curso de Node.js (Semana 12).",
+    "tech": ["node", "js", "mongodb"],
+    "repoLink": "https://github.com/Darukio/project_week12_compass_node.js",
+    "status": "completed"
+  },
+  {
+    "id": 5,
+    "title": "Angular Computer Management",
+    "desc": "Sistema de gestión de equipos de cómputo.",
+    "tech": ["angular", "typescript"],
+    "repoLink": "https://github.com/Darukio/AngularComputerManagement",
+    "status": "completed"
+  }
+]
