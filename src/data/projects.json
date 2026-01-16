@@ -27,7 +27,7 @@
     "id": 4,
     "title": "Compass Node.js Project",
     "desc": "Proyecto final para el curso de Node.js (Semana 12).",
-    "tech": ["node", "js", "mongodb"],
+    "tech": ["node", "javascript", "mongodb"],
     "repoLink": "https://github.com/Darukio/project_week12_compass_node.js",
     "status": "completed"
   },
@@ -38,5 +38,45 @@
     "tech": ["angular", "typescript"],
     "repoLink": "https://github.com/Darukio/AngularComputerManagement",
     "status": "completed"
+  },
+  {
+    "id": 6,
+    "title": "Java Expedient Notes UI",
+    "desc": "Interfaz gráfica para gestionar notas de expedientes.",
+    "tech": ["java"],
+    "repoLink": "https://github.com/Darukio/JavaExpedientNotesUI",
+    "status": "completed"
+  },
+  {
+    "id": 7,
+    "title": "Práctica Veterinaria (Frontend)",
+    "desc": "Interfaz web para la gestión de una clínica veterinaria.",
+    "tech": ["react", "javascript"],
+    "repoLink": "https://github.com/Darukio/PracticaVeterinariaFrontend",
+    "status": "completed"
+  },
+  {
+    "id": 8,
+    "title": "Práctica Veterinaria (Backend)",
+    "desc": "API y lógica de negocio para la clínica veterinaria.",
+    "tech": ["node", "javascript", "mariadb", "prisma"],
+    "repoLink": "https://github.com/Darukio/PracticaVeterinariaBackend",
+    "status": "completed"
+  },
+  {
+    "id": 9,
+    "title": "VentiUp (Frontend)",
+    "desc": "Interfaz desktop para la plataforma de gestión de ventas VentiUp.",
+    "tech": ["python"],
+    "repoLink": "https://github.com/lit-ar-dev/ProgramaVentiUpFrontend",
+    "status": "wip"
+  },
+  {
+    "id": 10,
+    "title": "VentiUp (Backend)",
+    "desc": "API y lógica de negocio para la plataforma de gestión de ventas VentiUp.",
+    "tech": ["python", "mariadb"],
+    "repoLink": "https://github.com/lit-ar-dev/ProgramaVentiUpBackend",
+    "status": "wip"
   }
 ]

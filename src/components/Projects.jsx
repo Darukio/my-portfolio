@@ -8,6 +8,7 @@ import {
   FaJs,
   FaCheckCircle, // Icono para completado
   FaTools, // Icono para WIP
+  FaJava,
 } from "react-icons/fa";
 import {
   SiMongodb,
@@ -15,6 +16,8 @@ import {
   SiTailwindcss,
   SiTypescript,
   SiAngular,
+  SiPrisma,
+  SiMariadb,
 } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 import { FiExternalLink } from "react-icons/fi";
@@ -24,7 +27,7 @@ const ICON_MAP = {
   react: { icon: <FaReact />, color: "text-cyan-400" },
   node: { icon: <FaNodeJs />, color: "text-emerald-500" },
   python: { icon: <FaPython />, color: "text-amber-300" },
-  js: { icon: <FaJs />, color: "text-yellow-400" },
+  javascript: { icon: <FaJs />, color: "text-yellow-400" },
   html: { icon: <FaHtml5 />, color: "text-orange-500" },
   css: { icon: <FaCss3Alt />, color: "text-blue-500" },
   tailwind: { icon: <SiTailwindcss />, color: "text-cyan-300" },
@@ -33,6 +36,9 @@ const ICON_MAP = {
   mongodb: { icon: <SiMongodb />, color: "text-green-500" },
   postgresql: { icon: <SiPostgresql />, color: "text-indigo-400" },
   reactnative: { icon: <TbBrandReactNative />, color: "text-cyan-400" },
+  prisma: { icon: <SiPrisma />, color: "text-blue-400" },
+  mariadb: { icon: <SiMariadb />, color: "text-blue-700" },
+  java: { icon: <FaJava />, color: "text-red-500" },
 };
 
 const Projects = () => {
