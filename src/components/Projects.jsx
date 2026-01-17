@@ -21,6 +21,7 @@ import {
 } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 import { FiExternalLink } from "react-icons/fi";
+import { useTranslation } from "react-i18next";
 
 // Mapa de iconos de tecnologías
 const ICON_MAP = {
@@ -42,16 +43,19 @@ const ICON_MAP = {
 };
 
 const Projects = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="projects" className="py-24">
       {/* Encabezado de la sección */}
       <div className="flex items-center gap-4 mb-12">
         <h2 className="text-3xl md:text-4xl font-bold text-slate-100">
-          Proyectos<span className="animate-pulse text-cyan-500">.</span>
+          {t("projects.title")}
+          <span className="animate-pulse text-cyan-500">.</span>
         </h2>
         <div className="h-px bg-slate-700 flex-grow"></div>
         <span className="text-cyan-500 font-mono text-sm hidden md:block">
-          {projectsData.length} ítems encontrados
+          {projectsData.length} {t("projects.items_found")}
         </span>
       </div>
 
@@ -83,12 +87,12 @@ const Projects = () => {
                     {isWip ? (
                       <>
                         <FaTools className="text-[10px] animate-pulse" />
-                        <span>WIP / En Desarrollo</span>
+                        <span>{t("projects.status.wip")}</span>
                       </>
                     ) : (
                       <>
                         <FaCheckCircle className="text-[10px]" />
-                        <span>Finalizado</span>
+                        <span>{t("projects.status.completed")}</span>
                       </>
                     )}
                   </div>
@@ -107,12 +111,12 @@ const Projects = () => {
 
                 {/* Título del Proyecto */}
                 <h3 className="text-xl font-bold text-slate-100 group-hover:text-cyan-400 transition-colors mb-2">
-                  {project.title}
+                  {t(`projects.projects_content.${project.id}.title`)}
                 </h3>
 
                 {/* Descripción */}
                 <p className="text-slate-400 text-sm mb-6 flex-grow leading-relaxed">
-                  {project.desc}
+                  {t(`projects.projects_content.${project.id}.desc`)}
                 </p>
 
                 {/* Tech Tags */}

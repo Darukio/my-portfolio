@@ -1,0 +1,81 @@
+{
+  "switch_btn": "LENG",
+  "nav": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "available_for_hire": "Disponible para Trabajar",
+    "role": "Desarrollador Full Stack <0>//</0> Especialista en Backend y Automatización de Procesos",
+    "description": "Futuro <0>Ingeniero Informático</0> especializado en transformar requisitos complejos en <0>software de calidad</0>. Mi base es la arquitectura limpia y el uso de buenas de prácticas de desarrollo para crear <0>soluciones que perduran</0>.",
+    "tech_stack": "Stack Tecnológico"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "items_found": "ítems encontrados",
+    "status": {
+      "wip": "En Desarrollo",
+      "completed": "Finalizado"
+    },
+    "projects_content": {
+      "1": {
+        "title": "Plataforma Cuidadores (Frontend)",
+        "desc": "Interfaz web desarrollada en TypeScript para la gestión de cuidadores."
+      },
+      "2": {
+        "title": "Plataforma Cuidadores (Backend)",
+        "desc": "API y lógica de negocio para la plataforma de servicios."
+      },
+      "3": {
+        "title": "PyZKTecoClocks",
+        "desc": "GUI para gestionar relojes ZKTeco (Reinicio, Sincronización, Datos)."
+      },
+      "4": {
+        "title": "Compass Node.js Project",
+        "desc": "Proyecto final para el curso de Node.js (Semana 12)."
+      },
+      "5": {
+        "title": "Angular Computer Management",
+        "desc": "Sistema de gestión de equipos de cómputo."
+      },
+      "6": {
+        "title": "Java Expedient Notes UI",
+        "desc": "Interfaz gráfica para gestionar notas de expedientes."
+      },
+      "7": {
+        "title": "Práctica Veterinaria (Frontend)",
+        "desc": "Interfaz web para la gestión de una clínica veterinaria."
+      },
+      "8": {
+        "title": "Práctica Veterinaria (Backend)",
+        "desc": "API y lógica de negocio para la gestión de una clínica veterinaria."
+      },
+      "9": {
+        "title": "VentiUp (Frontend)",
+        "desc": "Interfaz web para la gestión de ventas y clientes."
+      },
+      "10": {
+        "title": "VentiUp (Backend)",
+        "desc": "API y lógica de negocio para la gestión de ventas y clientes."
+      }
+    }
+  },
+  "contact": {
+    "contact_me": "Contáctame",
+    "send_message_prompt": "Envíame un mensaje directamente. Responderé lo antes posible.",
+    "your_name": "Ingresa tu nombre",
+    "name_placeholder": "Tu Nombre",
+    "your_email": "Ingresa tu correo electrónico",
+    "email_placeholder": "tu@email.com",
+    "subject": "Ingresa el asunto",
+    "subject_placeholder": "Propuesta de proyecto / Consulta...",
+    "your_message": "Escribe tu mensaje aquí...",
+    "message_placeholder": "Tu Mensaje",
+    "send_button": "enviar_correo",
+    "sending": "Enviando...",
+    "send_success": "¡Mensaje enviado con éxito!",
+    "send_error": "Ocurrió un error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.",
+    "conn_error": "Error de conexión. Por favor, verifica tu conexión a internet e inténtalo de nuevo."
+  }
+}

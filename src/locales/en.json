@@ -1,0 +1,81 @@
+{
+  "switch_btn": "LANG",
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "available_for_hire": "Available for Hire",
+    "role": "Full Stack Developer <0>//</0> Backend and Process Automation Specialist",
+    "description": "Future <0>Computer Engineer</0> specialized in transforming complex requirements into <0>quality software</0>. My foundation is clean architecture and the use of good development practices to create <0>solutions that endure</0>.",
+    "tech_stack": "Tech Stack"
+  },
+  "projects": {
+    "title": "Projects",
+    "items_found": "items found",
+    "status": {
+      "wip": "WIP / Work In Progress",
+      "completed": "Completed"
+    },
+    "projects_content": {
+      "1": {
+        "title": "Caregivers Platform (Frontend)",
+        "desc": "Web interface developed in TypeScript for caregiver management."
+      },
+      "2": {
+        "title": "Caregivers Platform (Backend)",
+        "desc": "API and business logic for the service platform."
+      },
+      "3": {
+        "title": "PyZKTecoClocks",
+        "desc": "GUI to manage ZKTeco clocks (Restart, Sync, Data)."
+      },
+      "4": {
+        "title": "Compass Node.js Project",
+        "desc": "Final project for the Node.js course (Week 12)."
+      },
+      "5": {
+        "title": "Angular Computer Management",
+        "desc": "Computer equipment management system."
+      },
+      "6": {
+        "title": "Java Expedient Notes UI",
+        "desc": "Graphical interface to manage expedient notes."
+      },
+      "7": {
+        "title": "Veterinary Practice (Frontend)",
+        "desc": "Web interface for managing a veterinary clinic."
+      },
+      "8": {
+        "title": "Veterinary Practice (Backend)",
+        "desc": "API and business logic for managing a veterinary clinic."
+      },
+      "9": {
+        "title": "VentiUp (Frontend)",
+        "desc": "Web interface for sales and customer management."
+      },
+      "10": {
+        "title": "VentiUp (Backend)",
+        "desc": "API and business logic for sales and customer management."
+      }
+    }
+  },
+  "contact": {
+    "contact_me": "Contact Me",
+    "send_message_prompt": "Send me a message directly. I'll get back to you as soon as possible.",
+    "your_name": "Enter your name",
+    "name_placeholder": "Your Name",
+    "your_email": "Enter your email",
+    "email_placeholder": "your@email.com",
+    "subject": "Enter your subject",
+    "subject_placeholder": "Project proposal / Inquiry...",
+    "your_message": "Write your message here...",
+    "message_placeholder": "Your Message",
+    "send_button": "send_email",
+    "sending": "Sending...",
+    "send_success": "Message sent successfully!",
+    "send_error": "An error occurred while sending the message. Please try again later.",
+    "conn_error": "Connection error. Please check your internet connection and try again."
+  }
+}

@@ -6,7 +6,6 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    // Agregamos 'flex flex-col' al contenedor principal
     <div className="relative min-h-screen flex flex-col text-slate-200 selection:bg-cyan-500 selection:text-white font-mono overflow-x-hidden">
       {/* Fondos y efectos... */}
       <div className="fixed inset-0 -z-10 h-full w-full bg-slate-950 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
@@ -18,7 +17,7 @@ function App() {
         <Projects />
         <Contact />
       </main>
-      <Footer /> {/* <--- Aquí va el Footer */}
+      <Footer />
     </div>
   );
 }

@@ -1,4 +1,9 @@
+import LanguageSwitcher from "./LanguageSwitcher";
+import { useTranslation } from "react-i18next";
+
 const Navbar = () => {
+  const { t } = useTranslation();
+
   return (
     <nav className="fixed w-full top-0 z-50 px-4 py-3">
       {/* Barra estilo "Polybar" o "Waybar" */}
@@ -12,32 +17,36 @@ const Navbar = () => {
         </div>
 
         {/* Sección Derecha: Navegación tipo texto */}
-        <ul className="flex space-x-8">
-          <li>
-            <a
-              href="#home"
-              className="hover:text-cyan-400 hover:underline decoration-cyan-500 underline-offset-4 transition-all"
-            >
-              ./Inicio
-            </a>
-          </li>
-          <li>
-            <a
-              href="#projects"
-              className="hover:text-cyan-400 hover:underline decoration-cyan-500 underline-offset-4 transition-all"
-            >
-              ./Proyectos
-            </a>
-          </li>
-          <li>
-            <a
-              href="#contact"
-              className="hover:text-cyan-400 hover:underline decoration-cyan-500 underline-offset-4 transition-all"
-            >
-              ./Contacto
-            </a>
-          </li>
-        </ul>
+        <div className="flex items-center gap-8">
+          <ul className="flex space-x-8">
+            <li>
+              <a
+                href="#home"
+                className="hover:text-cyan-400 hover:underline decoration-cyan-500 underline-offset-4 transition-all"
+              >
+                ./{t("nav.home")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="#projects"
+                className="hover:text-cyan-400 hover:underline decoration-cyan-500 underline-offset-4 transition-all"
+              >
+                ./{t("nav.projects")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contact"
+                className="hover:text-cyan-400 hover:underline decoration-cyan-500 underline-offset-4 transition-all"
+              >
+                ./{t("nav.contact")}
+              </a>
+            </li>
+          </ul>
+
+          <LanguageSwitcher />
+        </div>
       </div>
     </nav>
   );

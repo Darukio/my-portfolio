@@ -6,10 +6,12 @@ import {
   FaCheck,
   FaExclamationCircle,
 } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
   const formRef = useRef();
   const [status, setStatus] = useState("idle"); // idle, sending, success, error
+  const { t } = useTranslation();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -30,7 +32,7 @@ const Contact = () => {
         console.log(error);
         setStatus("error");
         setTimeout(() => setStatus("idle"), 3000);
-      }
+      },
     );
   };
 
@@ -40,11 +42,10 @@ const Contact = () => {
         {/* Header */}
         <div className="mb-12 text-center md:text-left">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-100 mb-4">
-            Contáctame<span className="animate-pulse text-cyan-500">!</span>
+            {t("contact.contact_me")}
+            <span className="animate-pulse text-cyan-500">!</span>
           </h2>
-          <p className="text-slate-400">
-            Envíame un mensaje directamente. Responderé lo antes posible.
-          </p>
+          <p className="text-slate-400">{t("contact.send_message_prompt")}</p>
         </div>
 
         {/* Terminal Window Form */}
@@ -68,7 +69,7 @@ const Contact = () => {
               {/* Name Input */}
               <div className="group">
                 <label className="block text-slate-500 text-sm mb-1 group-focus-within:text-cyan-400 transition-colors">
-                  // Ingresa tu nombre
+                  // {t("contact.your_name")}
                 </label>
                 <div className="flex items-center gap-2 bg-slate-950/50 p-2 rounded border border-transparent focus-within:border-cyan-500/50 transition-all">
                   <span className="text-emerald-500">➜</span>
@@ -76,7 +77,7 @@ const Contact = () => {
                   <input
                     type="text"
                     name="name"
-                    placeholder="Tu Nombre"
+                    placeholder={t("contact.name_placeholder")}
                     required
                     className="bg-transparent border-none outline-none text-slate-200 w-full placeholder:text-slate-600"
                   />
@@ -86,7 +87,7 @@ const Contact = () => {
               {/* Email Input */}
               <div className="group">
                 <label className="block text-slate-500 text-sm mb-1 group-focus-within:text-cyan-400 transition-colors">
-                  // Ingresa tu correo
+                  // {t("contact.your_email")}
                 </label>
                 <div className="flex items-center gap-2 bg-slate-950/50 p-2 rounded border border-transparent focus-within:border-cyan-500/50 transition-all">
                   <span className="text-emerald-500">➜</span>
@@ -94,7 +95,7 @@ const Contact = () => {
                   <input
                     type="email"
                     name="email"
-                    placeholder="tu@email.com"
+                    placeholder={t("contact.email_placeholder")}
                     required
                     className="bg-transparent border-none outline-none text-slate-200 w-full placeholder:text-slate-600"
                   />
@@ -104,7 +105,7 @@ const Contact = () => {
               {/* Title Input */}
               <div className="group">
                 <label className="block text-slate-500 text-sm mb-1 group-focus-within:text-cyan-400 transition-colors">
-                  // Asunto del correo
+                  // {t("contact.subject")}
                 </label>
                 <div className="flex items-center gap-2 bg-slate-950/50 p-2 rounded border border-transparent focus-within:border-cyan-500/50 transition-all">
                   <span className="text-emerald-500">➜</span>
@@ -112,7 +113,7 @@ const Contact = () => {
                   <input
                     type="text"
                     name="title"
-                    placeholder="Propuesta de proyecto / Consulta..."
+                    placeholder={t("contact.subject_placeholder")}
                     required
                     className="bg-transparent border-none outline-none text-slate-200 w-full placeholder:text-slate-600"
                   />
@@ -122,13 +123,13 @@ const Contact = () => {
               {/* Message Input */}
               <div className="group">
                 <label className="block text-slate-500 text-sm mb-1 group-focus-within:text-cyan-400 transition-colors">
-                  // Tu mensaje
+                  // {t("contact.your_message")}
                 </label>
                 <div className="flex gap-2 bg-slate-950/50 p-2 rounded border border-transparent focus-within:border-cyan-500/50 transition-all">
                   <span className="text-emerald-500 mt-1">➜</span>
                   <textarea
                     name="message"
-                    placeholder="Escribe tu mensaje aquí..."
+                    placeholder={t("contact.message_placeholder")}
                     required
                     rows="4"
                     className="bg-transparent border-none outline-none text-slate-200 w-full resize-none placeholder:text-slate-600"
@@ -147,32 +148,32 @@ const Contact = () => {
                       status === "sending"
                         ? "bg-slate-700 cursor-wait text-slate-400"
                         : status === "success"
-                        ? "bg-emerald-600 text-white cursor-default"
-                        : "bg-cyan-600 hover:bg-cyan-500 text-slate-900 hover:shadow-[0_0_15px_rgba(8,145,178,0.4)]"
+                          ? "bg-emerald-600 text-white cursor-default"
+                          : "bg-cyan-600 hover:bg-cyan-500 text-slate-900 hover:shadow-[0_0_15px_rgba(8,145,178,0.4)]"
                     }
                   `}
                 >
                   {status === "idle" && (
                     <>
-                      <span>./enviar_correo.sh</span>
+                      <span>./{t("contact.send_button")}.sh</span>
                       <FaPaperPlane className="text-xs" />
                     </>
                   )}
-                  {status === "sending" && <span>Ejecutando...</span>}
+                  {status === "sending" && <span>{t("contact.sending")}</span>}
                   {status === "success" && (
                     <>
-                      <span>Enviado</span>
+                      <span>{t("contact.send_success")}</span>
                       <FaCheck />
                     </>
                   )}
-                  {status === "error" && <span>Error al enviar</span>}
+                  {status === "error" && <span>{t("contact.send_error")}</span>}
                 </button>
 
                 {/* Mensaje de error */}
                 {status === "error" && (
                   <div className="flex items-center gap-2 text-red-400 text-sm animate-pulse">
                     <FaExclamationCircle />
-                    <span>Error de conexión. Intenta más tarde.</span>
+                    <span>{t("contact.conn_error")}</span>
                   </div>
                 )}
               </div>

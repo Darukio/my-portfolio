@@ -1,8 +1,11 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiReact, SiNodedotjs, SiPython, SiTailwindcss } from "react-icons/si";
 import AVATAR_ASCII from "../assets/avatar_ascii.txt?raw";
+import { useTranslation, Trans } from "react-i18next";
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <section
       id="home"
@@ -30,7 +33,7 @@ const Hero = () => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
             </span>
-            Disponible para trabajar
+            {t("hero.available_for_hire")}
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-slate-100 tracking-tight mb-4">
@@ -39,9 +42,13 @@ const Hero = () => {
           </h1>
 
           <h2 className="text-xl md:text-2xl text-slate-400 font-light">
-            Desarrollador Full Stack{" "}
-            <span className="text-slate-600 mx-2">//</span> Especialista en
-            Backend y Automatización de Procesos
+            <Trans
+              i18nKey="hero.role"
+              components={[
+                /* El índice 0 del array corresponde a <0> en el JSON */
+                <span className="text-slate-600 mx-2" key="0"></span>,
+              ]}
+            />
           </h2>
         </div>
       </div>
@@ -51,11 +58,10 @@ const Hero = () => {
       <div className="flex flex-col items-center md:items-start">
         {/* Descripción */}
         <p className="text-slate-400 text-lg leading-relaxed mb-10 text-center md:text-left md:border-l-4 md:border-cyan-500/50 md:pl-6 bg-slate-900/30 md:bg-transparent py-4 md:py-0 px-4 md:px-0 rounded-lg">
-          Futuro <strong>Ingeniero Informático</strong> especializado en
-          transformar requisitos complejos en{" "}
-          <strong>software de calidad</strong>. Mi base es la arquitectura
-          limpia y el uso de buenas de prácticas de desarrollo para crear{" "}
-          <strong>soluciones que perduran</strong>.
+          <Trans
+            i18nKey="hero.description"
+            components={[<strong key="0"></strong>]}
+          />
         </p>
 
         {/* Botones */}
@@ -82,12 +88,10 @@ const Hero = () => {
 
         {/* Tech Stack */}
         <div className="w-full border-t border-slate-800 pt-8">
-          {/* Eliminado 'md:text-left' para que siempre esté centrado */}
           <h3 className="text-sm uppercase tracking-widest text-slate-500 mb-6 font-semibold text-center">
-            Stack Tecnológico
+            {t("hero.tech_stack")}
           </h3>
 
-          {/* Eliminado 'md:justify-start' para que siempre esté justificado al centro */}
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
             <TechIcon
               Icon={SiReact}
