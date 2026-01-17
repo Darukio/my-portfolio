@@ -7,7 +7,7 @@
   },
   {
     "id": 2,
-    "tech": ["node", "typescript", "postgresql"],
+    "tech": ["node", "nestjs", "typescript", "postgresql"],
     "repoLink": "https://github.com/lit-ar-dev/PlataformaCuidadoresBackend",
     "status": "wip"
   },

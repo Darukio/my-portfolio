@@ -18,6 +18,7 @@ import {
   SiAngular,
   SiPrisma,
   SiMariadb,
+  SiNestjs,
 } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 import { FiExternalLink } from "react-icons/fi";
@@ -40,6 +41,7 @@ const ICON_MAP = {
   prisma: { icon: <SiPrisma />, color: "text-blue-400" },
   mariadb: { icon: <SiMariadb />, color: "text-blue-700" },
   java: { icon: <FaJava />, color: "text-red-500" },
+  nestjs: { icon: <SiNestjs />, color: "text-red-600" },
 };
 
 const Projects = () => {
