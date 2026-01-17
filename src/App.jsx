@@ -10,13 +10,26 @@ function App() {
       {/* Fondos y efectos... */}
       <div className="fixed inset-0 -z-10 h-full w-full bg-slate-950 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
       <div className="fixed left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-cyan-500 opacity-10 blur-[100px]"></div>
+
       <Navbar />
-      {/* El 'flex-grow' hace que este div ocupe todo el espacio disponible, empujando el Footer hacia abajo */}
+
       <main className="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <Hero />
-        <Projects />
-        <Contact />
+        {/* Agregamos un <section> o <div> envolvente con el ID y un scroll-margin-top 
+            para compensar la altura del Navbar fijo */}
+
+        <section id="home" className="scroll-mt-24">
+          <Hero />
+        </section>
+
+        <section id="projects" className="scroll-mt-24">
+          <Projects />
+        </section>
+
+        <section id="contact" className="scroll-mt-24">
+          <Contact />
+        </section>
       </main>
+
       <Footer />
     </div>
   );
